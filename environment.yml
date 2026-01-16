@@ -1,0 +1,11 @@
+name: flower-classifier
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch=2.2
+  - torchvision
+  - matplotlib
+  - numpy<2.0
