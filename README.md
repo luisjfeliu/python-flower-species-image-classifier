@@ -1,5 +1,16 @@
 # Flower Species Image Classifier
 This project finetunes a PyTorch torchvision model for classifying flower species images.
+
+# Requirements
+
+This repository uses Git LFS.
+
+Before cloning make sure to run the following if you wish to download the saved model:
+```
+git lfs install
+
+```
+
 # Setup
 ```
 conda env create -f environment.yml 
