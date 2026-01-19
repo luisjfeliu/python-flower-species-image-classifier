@@ -1,0 +1,28 @@
+{
+  "name": "Attach (Ruff + Black + Mypy)",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff",
+        "ms-python.black-formatter",
+        "ms-python.mypy-type-checker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
+        "ruff.enable": true,
+        "python.analysis.typeCheckingMode": "off",
+        "mypy-type-checker.enabled": true,
+        "mypy-type-checker.importStrategy": "fromEnvironment",
+        "mypy-type-checker.reportingScope": "workspace"
+      }
+    }
+  },
+  "postCreateCommand": "conda env create -f environment.yml || conda env update -f environment.yml",
+  "containerEnv": {
+    "CONDA_DEFAULT_ENV": "flower-classifier"
+  }
+}

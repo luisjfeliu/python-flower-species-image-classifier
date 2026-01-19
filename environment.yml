@@ -10,3 +10,8 @@ dependencies:
   - matplotlib
   - numpy
   - Pillow
+  - pip
+  - pip:
+      - ruff
+      - black
+      - mypy

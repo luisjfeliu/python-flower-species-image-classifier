@@ -1,0 +1,37 @@
+[tool.black]
+line-length = 100
+target-version = ["py312"]
+skip-string-normalization = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+fix = true
+
+# A sensible starter set:
+# E/F = pycodestyle/pyflakes (real errors)
+# B = bugbear (common bug patterns)
+# I = import sorting (isort replacement)
+# UP = pyupgrade (modernizes syntax)
+select = ["E", "F", "B", "I", "UP"]
+
+# If you use notebooks:
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+# Example ignores you may or may not want:
+ignore = [
+  "E501", # line length (Black handles wrapping; optional to keep/ignore)
+]
+
+[tool.mypy]
+python_version = "3.12"
+warn_unused_configs = true
+ignore_missing_imports = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+warn_return_any = true
+warn_unused_ignores = true
+pretty = true
+
