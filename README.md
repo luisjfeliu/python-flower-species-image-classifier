@@ -69,3 +69,36 @@ frangipani: 0.3664
 water lily: 0.1695
 lotus lotus: 0.1380
 ```
+#### Train out with the following parameters
+```
+python main.py train flowers --arch resnet34 --learning_rate 0.001 --hidden_units 576 --epochs 25 --gpu
+```
+```
+2026-01-24T02:22:04.283116824Z   Downloading: "https://download.pytorch.org/models/resnet34-b627a593.pth" to /root/.cache/torch/hub/checkpoints/resnet34-b627a593.pth
+2026-01-24T02:22:58.883110243Z   Epoch 1/25.. Train loss: 3.783.. Validation loss: 2.210.. Validation accuracy: 0.455
+2026-01-24T02:23:49.883423339Z   Epoch 2/25.. Train loss: 2.086.. Validation loss: 1.166.. Validation accuracy: 0.692
+2026-01-24T02:24:41.282771841Z   Epoch 3/25.. Train loss: 1.500.. Validation loss: 0.803.. Validation accuracy: 0.795
+2026-01-24T02:25:32.282820870Z   Epoch 4/25.. Train loss: 1.265.. Validation loss: 0.680.. Validation accuracy: 0.815
+2026-01-24T02:26:24.082736436Z   Epoch 5/25.. Train loss: 1.137.. Validation loss: 0.606.. Validation accuracy: 0.829
+2026-01-24T02:27:15.682946763Z   Epoch 6/25.. Train loss: 1.026.. Validation loss: 0.526.. Validation accuracy: 0.850
+2026-01-24T02:28:07.483268643Z   Epoch 7/25.. Train loss: 0.972.. Validation loss: 0.495.. Validation accuracy: 0.869
+2026-01-24T02:28:59.082868831Z   Epoch 8/25.. Train loss: 0.901.. Validation loss: 0.464.. Validation accuracy: 0.878
+2026-01-24T02:29:50.682784722Z   Epoch 9/25.. Train loss: 0.870.. Validation loss: 0.428.. Validation accuracy: 0.886
+2026-01-24T02:30:42.083411142Z   Epoch 10/25.. Train loss: 0.845.. Validation loss: 0.389.. Validation accuracy: 0.898
+2026-01-24T02:31:33.282989219Z   Epoch 11/25.. Train loss: 0.806.. Validation loss: 0.399.. Validation accuracy: 0.893
+2026-01-24T02:32:24.482402565Z   Epoch 12/25.. Train loss: 0.790.. Validation loss: 0.369.. Validation accuracy: 0.909
+2026-01-24T02:33:15.883235965Z   Epoch 13/25.. Train loss: 0.739.. Validation loss: 0.356.. Validation accuracy: 0.909
+2026-01-24T02:34:07.082507385Z   Epoch 14/25.. Train loss: 0.761.. Validation loss: 0.371.. Validation accuracy: 0.908
+2026-01-24T02:34:58.082808423Z   Epoch 15/25.. Train loss: 0.738.. Validation loss: 0.361.. Validation accuracy: 0.909
+2026-01-24T02:35:49.082480609Z   Epoch 16/25.. Train loss: 0.690.. Validation loss: 0.383.. Validation accuracy: 0.894
+2026-01-24T02:36:40.082522125Z   Epoch 17/25.. Train loss: 0.671.. Validation loss: 0.344.. Validation accuracy: 0.904
+2026-01-24T02:37:30.482504206Z   Epoch 18/25.. Train loss: 0.646.. Validation loss: 0.361.. Validation accuracy: 0.906
+2026-01-24T02:38:21.282582755Z   Epoch 19/25.. Train loss: 0.666.. Validation loss: 0.377.. Validation accuracy: 0.895
+2026-01-24T02:39:12.282994860Z   Epoch 20/25.. Train loss: 0.643.. Validation loss: 0.322.. Validation accuracy: 0.924
+2026-01-24T02:40:02.885197915Z   Epoch 21/25.. Train loss: 0.634.. Validation loss: 0.320.. Validation accuracy: 0.921
+2026-01-24T02:40:54.082387809Z   Epoch 22/25.. Train loss: 0.620.. Validation loss: 0.339.. Validation accuracy: 0.910
+2026-01-24T02:41:44.882894884Z   Epoch 23/25.. Train loss: 0.643.. Validation loss: 0.321.. Validation accuracy: 0.923
+2026-01-24T02:42:36.083178815Z   Epoch 24/25.. Train loss: 0.583.. Validation loss: 0.365.. Validation accuracy: 0.923
+2026-01-24T02:43:27.282541496Z   Epoch 25/25.. Train loss: 0.612.. Validation loss: 0.335.. Validation accuracy: 0.907
+2026-01-24T02:43:27.482528028Z   Checkpoint saved to ./checkpoint.pth
+```
