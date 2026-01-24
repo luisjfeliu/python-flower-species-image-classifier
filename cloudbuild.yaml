@@ -1,0 +1,15 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      [
+        "build",
+        "--build-arg",
+        "REPO_URL=https://github.com/luisjfeliu/python-flower-species-image-classifier.git",
+        "--build-arg",
+        "REPO_REF=main",
+        "-t",
+        "gcr.io/udacity-woolf/flower-classifier:v0",
+        ".",
+      ]
+images:
+  - gcr.io/udacity-woolf/flower-classifier:v0
