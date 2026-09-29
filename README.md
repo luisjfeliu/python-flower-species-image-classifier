@@ -1,6 +1,19 @@
 # Flower Species Image Classifier
 This project finetunes a PyTorch torchvision model for classifying flower species images.
 
+## ResNet-50 notebook results
+
+The [notebook](./Image%20Classifier%20Project.ipynb) uses transfer learning with an ImageNet-pretrained ResNet-50, freezing its pretrained parameters and training a custom classifier head for 102 flower species. Training runs for 25 epochs with data augmentation, cross-entropy loss, and AdamW; the checkpoint is selected by best validation accuracy.
+
+| Metric | Recorded result |
+| --- | --- |
+| Best validation accuracy | 95.23% |
+| Test accuracy | **94.38%** |
+| Test loss (cross-entropy) | 0.1915 |
+| Test images | 819 |
+
+The notebook records the same test accuracy and loss after saving and reloading the model checkpoint. These results come from the saved ResNet-50 notebook run; the CLI examples below show separate ResNet-34 runs.
+
 # Requirements
 
 This repository uses Git LFS.
