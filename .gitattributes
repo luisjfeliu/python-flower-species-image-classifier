@@ -1,1 +1,4 @@
 *.pth filter=lfs diff=lfs merge=lfs -text
+
+# Exclude generated HTML reports from GitHub language statistics.
+"/Image Classifier Project.html" linguist-generated=true
